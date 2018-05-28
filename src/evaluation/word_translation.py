@@ -48,7 +48,7 @@ def load_dictionary(path, word2id1, word2id2):
     """
     print(path)
     print(os.getcwd())
-    assert os.path.isfile(path)
+    print( os.path.isfile(path))
 
     pairs = []
     not_found = 0
