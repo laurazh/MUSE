@@ -14,7 +14,7 @@ import torch
 from ..utils import get_nn_avg_dist
 import os
 
-DIC_EVAL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'data', 'crosslingual', 'dictionaries')
+DIC_EVAL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')
 
 
 logger = getLogger()
