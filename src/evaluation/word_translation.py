@@ -12,7 +12,7 @@ import numpy as np
 import torch
 
 from ..utils import get_nn_avg_dist
-
+import os
 
 DIC_EVAL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'data', 'crosslingual', 'dictionaries')
 
@@ -46,6 +46,8 @@ def load_dictionary(path, word2id1, word2id2):
     Return a torch tensor of size (n, 2) where n is the size of the
     loader dictionary, and sort it by source word frequency.
     """
+    print(path)
+    print(os.getcwd())
     assert os.path.isfile(path)
 
     pairs = []
