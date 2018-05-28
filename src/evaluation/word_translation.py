@@ -11,10 +11,9 @@ from logging import getLogger
 import numpy as np
 import torch
 
-from ..utils import get_nn_avg_dist
-import os
+from ..utils import get_nn_avg_dist 
 
-DIC_EVAL_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..')
+DIC_EVAL_PATH = os.path.join('.')
 
 
 logger = getLogger()
